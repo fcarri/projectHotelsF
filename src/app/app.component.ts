@@ -8,11 +8,11 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'projectHotelsF';
-  ciutat:any="";
+  ciutat:any;
 
 
   buscar():void{
-    //alert(this.ciutat);
+    alert(this.ciutat);
 
     //var iframe = document.createElement('iframe');
     //iframe.src = 'https://my.atlistmaps.com/map/1fc716ac-6e9a-4f13-af42-c4c759dfb163?share=true;charset=utf-8,';
