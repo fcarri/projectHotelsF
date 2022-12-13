@@ -25,13 +25,7 @@
 <nav class="navbar justify-content-center bg-info">
   <ul class="nav justify-content-center">
     <li class="form-control me-4">
-      <input class="form-control" type="text" placeholder="Barcelona">
-    </li>
-  </ul>
-
-  <ul class="nav justify-content-center">
-    <li class="form-control me-4">
-      <input class="form-control" type="text" placeholder="1 hab : 2 adults">
+      <input class="form-control" type="text" [(ngModel)]="ciutat" placeholder="Barcelona">
     </li>
   </ul>
 
@@ -42,7 +36,7 @@
   </ul>
 </nav>
 
-
+<app-map>ciutat="{{ciutat}}"</app-map>
 
 <div class="container text-center">
   <p></p>
@@ -94,7 +88,6 @@
 
 <p></p>
 
-
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
     <a class="nav-link" href="#">Condicions generals</a>
@@ -113,7 +106,5 @@
     </div>
   </div>
 </nav>
-
-
 
 <router-outlet></router-outlet>

@@ -1,4 +1,4 @@
-
+/*
 let map;
 
 function initMap(): void {
@@ -10,4 +10,6 @@ function initMap(): void {
 
 
 window.initMap = initMap;
+*/
+
 
