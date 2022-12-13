@@ -15,8 +15,8 @@ export class MapComponent implements OnInit{
 
   ngOnInit(): void {
     console.log('ciutat:',this.ciutat);
-    this.ciutat="Barcelona";
-    //alert(this.ciutat);
+    this.ciutat;
+    alert(this.ciutat);
   }
 
 }
