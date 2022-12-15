@@ -22,7 +22,8 @@ export class AppComponent{
     lng: 2.15899
   };
   zoom = 14;
-  moveMap(event: google.maps.MapMouseEvent) {
+
+  moveMap(event: google.maps.MapMouseEvent): void {
     if (event.latLng != null) this.center = (event.latLng.toJSON());
   }
   move(event: google.maps.MapMouseEvent) {
@@ -30,7 +31,7 @@ export class AppComponent{
   }
 
   buscar():void{
-    //alert("app.comp "+this.ciutat);
+    alert("app.comp "+this.city);
 
     //var iframe = document.createElement('iframe');
     //iframe.src = 'https://my.atlistmaps.com/map/1fc716ac-6e9a-4f13-af42-c4c759dfb163?share=true;charset=utf-8,';
@@ -38,17 +39,7 @@ export class AppComponent{
     //iframe.height='690'
     //document.body.appendChild(iframe);
 
-
-
   }
-
-
-
-
-
-
-
-
 
 
 }
