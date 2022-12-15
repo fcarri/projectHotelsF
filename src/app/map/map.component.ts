@@ -4,7 +4,7 @@ import { Component, Input, OnInit } from '@angular/core';
   selector: 'app-map',
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.css'],
-  template:`<p>{{ciutat}}</p>`
+
 })
 export class MapComponent implements OnInit{
 
