@@ -22,3 +22,4 @@ import { MapComponent } from './map/map.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

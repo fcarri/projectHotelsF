@@ -25,18 +25,18 @@
 <nav class="navbar justify-content-center bg-info">
   <ul class="nav justify-content-center">
     <li class="form-control me-4">
-      <input class="form-control" type="text" [(ngModel)]="ciutat">
+      <input class="form-control" type="text" [(ngModel)]="city">
     </li>
   </ul>
 
   <ul class="nav justify-content-center">
     <li class="form-control me-4">
-      <button class="btn btn-primary" type="submit" (click)="buscar()">Buscar</button>
+      <button class="btn btn-primary" (click)="buscar()">Buscar</button>
     </li>
   </ul>
 </nav>
 
-<app-map>ciutat="{{ciutat}}"</app-map>
+<app-map>[ciutat]="city"</app-map>
 
 <div class="container text-center">
   <p></p>

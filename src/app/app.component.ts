@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,18 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {
+export class AppComponent{
   title = 'projectHotelsF';
-  ciutat:any;
 
+  city:any;
+
+  constructor(){
+    this.city='Barcelona';
+  }
 
   buscar():void{
-    alert(this.ciutat);
+    //alert("app.comp "+this.ciutat);
 
-    //var iframe = document.createElement('iframe');
-    //iframe.src = 'https://my.atlistmaps.com/map/1fc716ac-6e9a-4f13-af42-c4c759dfb163?share=true;charset=utf-8,';
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://my.atlistmaps.com/map/1fc716ac-6e9a-4f13-af42-c4c759dfb163?share=true;charset=utf-8,';
 
-    //document.body.appendChild(iframe);
+    document.body.appendChild(iframe);
 
   }
 
