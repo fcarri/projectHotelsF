@@ -34,5 +34,10 @@ export class AppComponent implements OnInit{
 
   }
 
+  home(){
+    window.location.href="../index.html"
+
+  }
+
 
 }
