@@ -1,3 +1,66 @@
-<p>{{ciutat}}</p>
+<p></p>
+<div *ngIf = "ciutat != null">
+  <div class="container container-fluid">
+    <div class="row">
+      <div class="col-sm-10">
+        <!-- google-maps-demo.component.html -->
+        <google-map height="650px"
+            width="100%"
+            [center]="center"
+            [zoom]="zoom"
+            (mapClick)="moveMap($event)"
+            (mapMousemove)="move($event)"
+            >
+        </google-map>
+      </div>
+      <div class = "col-sm-2 border border-primary">
+        <h4>Filtres</h4>
+        <hr>
+        <hr>
+        <p style="color:blue">Preu per nit</p>
+        <p></p>
+        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" unchecked>
+        De 25 € a 50 €
+        <p></p>
+        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" unchecked>
+        De 50 € a 100 €
+        <p></p>
+        <p style="color:blue">Categoria</p>
+        <input class="form-check-input" style="margin: 4px;" type="checkbox" id="check2" name="option2" value="something" unchecked>
+        <i class='far fa-star' style='color: yellow; margin: 2px;'></i>
+        <i class='far fa-star' style='color: yellow;margin: 2px;'></i>
+        <i class='far fa-star' style='color: yellow;margin: 2px;'></i>
+        <i class='far fa-star' style='color: yellow;'></i>
+        <p></p>
+        <input class="form-check-input" style="margin: 4px;" type="checkbox" id="check2" name="option2" value="something" unchecked>
+        <i class='far fa-star' style='color: yellow;margin: 2px;'></i>
+        <i class='far fa-star' style='color: yellow;margin: 2px;'></i>
+        <i class='far fa-star' style='color: yellow;'></i>
+        <p></p>
+        <input class="form-check-input" style="margin: 4px;" type="checkbox" id="check2" name="option2" value="something" unchecked>
+        <i class='far fa-star' style='color: yellow;margin: 2px;'></i>
+        <i class='far fa-star' style='color: yellow;'></i>
+        <p></p>
+        <input class="form-check-input" style="margin: 4px;" type="checkbox" id="check2" name="option2" value="something" unchecked>
+        <i class='far fa-star' style='color: yellow;'></i>
+        <p></p>
+        <p style="color:blue">Valoració</p>
+        <input class="form-check-input" style="margin: 4px;" type="checkbox" id="check2" name="option2" value="something" unchecked>
+        Excel·lent: 9 o més
+        <p></p>
+        <input class="form-check-input" style="margin: 4px;" type="checkbox" id="check2" name="option2" value="something" unchecked>
+        Molt bé: de 8 a 9
+        <p></p>
+        <input class="form-check-input" style="margin: 4px;" type="checkbox" id="check2" name="option2" value="something" unchecked>
+        Bé: de 7 a 8
+        <p></p>
+        <input class="form-check-input" style="margin: 4px;" type="checkbox" id="check2" name="option2" value="something" unchecked>
+        Agradable: de 6 a 7
+        <p></p>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 

@@ -11,30 +11,19 @@ export class AppComponent implements OnInit{
   title = 'projectHotelsF';
 
   city:any;
-  display:any;
 
   constructor(){
-    this.city='Barcelona';
+    this.city=null;
   }
 
   ngOnInit(): void {
 
   }
 
-  center: google.maps.LatLngLiteral = {
-    lat: 41.38879,
-    lng: 2.15899
-  };
-  zoom = 14;
-
-  moveMap(event: google.maps.MapMouseEvent): void {
-    if (event.latLng != null) this.center = (event.latLng.toJSON());
-  }
-  move(event: google.maps.MapMouseEvent) {
-    if (event.latLng != null) this.display = event.latLng.toJSON();
-  }
+  display:any;
 
   buscar():void{
+
     //alert("app.comp "+this.city);
 
     //var iframe = document.createElement('iframe');
